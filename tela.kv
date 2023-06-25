@@ -1,0 +1,44 @@
+ScreenManager:
+    SplashScreen:
+    Playlist:
+
+<SplashScreen>
+    name: 'splash'
+    MDFloatLayout:
+        md_bg_color: 100/255, 150/200, 100/100, 1
+        Image:
+            source:"foto-manoel.png"
+            size_hint: .50 ,  .50
+            pos_hint: {"center_x": .54, "center_y": .6}     
+
+        MDIconButton:
+            icon: ""
+            size_hint: .80 , .05
+            user_font_size: "35sp"
+            pos_hint: {"center_x": .5, "center_y": .12}      
+            on_press: app.root.current = 'playlist' 
+            md_bg_color: 100/225, 135/200, 115/205, 1
+
+        Label:
+            text: "Manoel Gomes - Caneta Azul"
+            pos_hint: {"center_x": .5, "center_y": .12} 
+<Playlist>
+    name: 'playlist'
+    MDFloatLayout:
+        md_bg_color: 100/255, 150/200, 100/100, 1
+        Image:
+            source:"foto-manoel.png"
+            size_hint: .30 ,  .30
+            pos_hint: {"center_x": .54, "center_y": .6}
+            
+        MDLabel:
+            id: label_song
+            text: 'Nome da música'
+            halign: "center"
+
+        MDIconButton:
+            icon: "play"
+            user_font_size: "35sp"
+            pos_hint: {"center_x": .5, "center_y": .4}
+            on_release: app.play_song()
+            md_bg_color: 100/225, 135/200, 115/205, 1
