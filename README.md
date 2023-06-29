@@ -1,5 +1,4 @@
-# Bom de Maize
-
+# Manoel Gomes 💙🖊️
 Este é um programa simples chamado "Bom de Maize" que foi desenvolvido para conhecer a tecnologia Kivy e explorar noções de widgets.
 
 ## Objetivo
